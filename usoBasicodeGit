@@ -1,0 +1,81 @@
+Esta es una guia funcional y sencilla. En ella se cubre las formas de trabajo 
+más habituales en git.
+
+0. Instalación de git.
+En win, mac, linux: https://git-scm.com/download
+Seguir los pasos.
+
+IMPORTANTE: Configurar los datos de usuario
+
+$ git config --global user.name "rpflo"
+$ git config --global user.email "rpflo@example.com"
+
+IMPORTANTE: añadir control de flujo automático, para evitar conflictos más 
+adelante
+
+git config --global core.autocrlf input
+
+1. Crear un repositorio (local)
+
+navega a la carpeta del proyecto de software, abre un cmd o bash y escribe:
+
+$ git init
+
+Se agregará una carpeta oculta .git que contiene los datos del repositorio.
+
+2. Ver el estado del repositorio (local)
+
+El la raiz de la carpeta del directorio pide el estado:
+
+$ git status
+
+Obtendrás la lista de los archivos sin seguimiento, esto es, que no se incluirán
+en las versiones al hacer "commit".
+
+3. Agregar ficheros y directorios al seguimiento
+
+3.1 Agregar un archivo de forma individual
+
+$ git add [nombre del archivo]
+
+3.1 Agregar el contenido de un directorio (y subdirectorios)
+
+$ git add [nombre del directorio]
+
+3.1 Agregar todos los ficheros de la raiz (y subdirectorios)
+
+$ git add .
+
+4. Ejecutar un commit (cometer? perpetrar?, hacer...)
+
+Una vez que se hayan realizado modificaciones en el código y merezca la pena 
+guardar esa versión es el momento del commit. git commit crea una nueva 
+"instantanea" del estado del repositorio haciendo hincapié en los cambios 
+realizados (en algunos casos perpetrados).
+
+Esta versión se guardará localmente, dentro de la carpeta .git. No deja de ser 
+útil trabajar así pero también puede volcar a un servidor para compartir trabajo
+en proyectos de colaboración.
+
+el uso habitual es:
+
+$ git commit -a -m 'descripción de la versión'
+
+donde:
+	-a establece que se agregen todos los cambios
+	-m 'mensaje' agrega un mensaje a la versión
+
+Hay muchas más opciones que pueden verse con la instrucción
+$ git commit -h
+
+Entre ellas es interesante la de firma.
+
+5. DESHACER CAMBIOS
+
+Como parte del trabajo a veces hacemos ensayo y error. A veces resulta dificil 
+saber que línea de código está provocando problemas. Siempre podemos volver a la
+ versión virgen que empezamos a editar mediante el comando 'git checkout'.
+
+
+
+
