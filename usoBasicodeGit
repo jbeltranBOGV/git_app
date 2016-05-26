@@ -76,6 +76,22 @@ Como parte del trabajo a veces hacemos ensayo y error. A veces resulta dificil
 saber que línea de código está provocando problemas. Siempre podemos volver a la
  versión virgen que empezamos a editar mediante el comando 'git checkout'.
 
+IMPORTANTE:
+Esto no es un control+Z, no se podrá volver al estado modificado ya que no se ha
+guardado. Es responsabilidad del programador usuario hacer copias a su debido 
+tiempo.
+
+Para revertir los cambios en un solo fichero
+
+$ git checkout [ruta relativa al fichero]
+
+Para revertir los cambios en un todo el repositorio
+
+$ git checkout .
+
+git checkout tiene más opciones:
+
+$ git checkout -h
 
 
 
