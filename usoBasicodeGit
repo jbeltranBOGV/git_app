@@ -1,6 +1,12 @@
 Esta es una guia funcional y sencilla. En ella se cubre las formas de trabajo 
 más habituales en git.
 
+PARTE 1. USO LOCAL DE GIT
+
+Para empezar. Con las instrucciones descritas se pueden guardar versiones 
+localmente y restablecer la última versión guardada. Para obtener más 
+posibilidades es necesario avanzar a la parte 2.
+
 0. Instalación de git.
 En win, mac, linux: https://git-scm.com/download
 Seguir los pasos.
@@ -93,5 +99,13 @@ git checkout tiene más opciones:
 
 $ git checkout -h
 
+PARTE 2. REPOSITORIOS REMOTOS
 
+Hasta ahora todo lo que hemos hecho ha sido guardar información en la carpeta 
+.git de nuestro proyecto. Esto es solo una parte de lo que se puede hacer.
+
+Lee esta parte si vas a trabajar de forma colaborativa usando un servidor GIT 
+remoto.
+
+Por ahora vamos a trabajar con github.
 
